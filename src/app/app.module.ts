@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComponenteAComponent } from './componente-a/componente-a.component';
-import { ComponenteBComponent } from './componente-b/componente-b.component';
-import { ComponenteCComponent } from './componente-c/componente-c.component';
+import { FormsModule } from '@angular/forms';
+import { ComponenteAComponent } from './components/componente-a/componente-a.component';
+import { ComponenteBComponent } from './components/componente-b/componente-b.component';
+import { ComponenteCComponent } from './components/componente-c/componente-c.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ComponenteCComponent } from './componente-c/componente-c.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
