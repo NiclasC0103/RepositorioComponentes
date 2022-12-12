@@ -1,4 +1,4 @@
-<h1>componente-a works!</h1>
+<h1>PAGINA 1</h1>
 <input [(ngModel)]="numero">
 <br>
 <strong *ngIf="numero>3">El numero es mayor a 3</strong>
@@ -13,3 +13,26 @@
 <div *ngFor="let sueldo of sueldos">
     <div>Sueldos: {{sueldo}}</div>
 </div>
+<br>
+<div style="background-color: lightblue;">
+    <hr>
+    <marquee><h1>FORMULARIO</h1></marquee>
+    <hr>
+</div>
+<br>
+<form style="background-color: lightgray; padding:10px ;">
+    <label>Ingrese su correo </label>
+    <input type="email" id="mail"> 
+    <label>  Ingrese su contraseña: </label>
+    <input type="password" id="pass">
+    <label>  Ingrese su nombre: </label>
+    <input type="text" id="nom">
+    <label>  Ingrese su fecha de nacimiento: </label>
+    <input type="date" id="fecha">
+    <br><br>
+    <label>  Ya eso es todo, dale al boton :) </label>
+    <button type="submit" (click)="Pagina2()">Hola</button>
+</form>
+<br>
+
+
