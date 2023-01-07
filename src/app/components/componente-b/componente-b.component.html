@@ -1,12 +1,35 @@
 <h1>PAGINA 2</h1>
-<p>Valor Recuperado:</p>
+<!-- <p>Valor Recuperado:</p>
 <p>{{resultado}}</p>
 <br>
 <p>Mensaje Recuperado:</p>
 <p>{{mensaje}}</p>
-<br>
+<br> -->
 <hr>
 <marquee><h1>DATOS INGRESADOS</h1></marquee>
 <hr>
+
+<table border="2px" align="center" style="padding: 2px;">
+    <tr>
+        <td>Correo Electronico</td>
+        <td>{{correore}}</td>
+        <td rowspan="4"><img  src=".\assets\qr.png"></td>
+    </tr>
+    <tr>
+        <td>Contraseña</td>
+        <td>{{passre}}</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>{{namere}}</td>
+    </tr>
+    <tr>
+        <td>Numero Telefono</td>
+        <td>{{tlfre}}</td>
+    </tr>
+    
+</table>
+<br>
+<button type="button" (click)="Pagina1()">Regresar</button>
 <br>
 

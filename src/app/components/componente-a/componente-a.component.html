@@ -1,5 +1,5 @@
 <h1>PAGINA 1</h1>
-<input [(ngModel)]="numero">
+<!-- <input [(ngModel)]="numero">
 <br>
 <strong *ngIf="numero>3">El numero es mayor a 3</strong>
 <strong *ngIf="numero==3">El numero es 3</strong>
@@ -13,26 +13,40 @@
 <div *ngFor="let sueldo of sueldos">
     <div>Sueldos: {{sueldo}}</div>
 </div>
-<br>
+<br> -->
 <div style="background-color: lightblue;">
     <hr>
     <marquee><h1>FORMULARIO</h1></marquee>
     <hr>
 </div>
 <br>
-<form style="background-color: lightgray; padding:10px ;">
-    <label>Ingrese su correo </label>
-    <input type="email" id="mail"> 
-    <label>  Ingrese su contraseña: </label>
-    <input type="password" id="pass">
-    <label>  Ingrese su nombre: </label>
-    <input type="text" id="nom">
-    <label>  Ingrese su fecha de nacimiento: </label>
-    <input type="date" id="fecha">
-    <br><br>
-    <label>  Ya eso es todo, dale al boton :) </label>
-    <button type="submit" (click)="Pagina2()">Hola</button>
-</form>
+<form>
+    <div class="form-group">
+      <label for="InputEmail">Correo Electronico </label>
+      <input type="email" class="form-control" id="InputEmail" placeholder="Ingresa tu Correo"
+      [(ngModel)]="email" name="email">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="InputPassword">Contraseña </label>
+      <input type="password" class="form-control" id="InputPassword" placeholder="Ingresa tu Contraseña"
+      [(ngModel)]="pass" name="passw">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="InputName">Nombre </label>
+        <input type="text" class="form-control" id="InputName" placeholder="Ingresa tu Nombre"
+        [(ngModel)]="name" name="nom">
+      </div>
+    <br>
+    <div class="form-group">
+        <label for="InputName">Telefono </label>
+        <input type="text" class="form-control" id="InputTlf" placeholder="Ingresa tu Telefono"
+        [(ngModel)]="tlf" name="telf">
+      </div>
+    <br>
+    <button type="button" (click)="almacenar()" (click)="Pagina2()">Submit</button>
+  </form>
 <br>
 
 
